@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
+    <title>前端小白 - 个人网站</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>欢迎来到我的个人网站</h1>
+            <div class="logo">前端小白</div>
             <nav>
                 <ul>
                     <li><a href="#home">首页</a></li>
                     <li><a href="#about">关于我</a></li>
                     <li><a href="#projects">项目</a></li>
+                    <li><a href="#skills">技能</a></li>
                     <li><a href="#contact">联系我</a></li>
                 </ul>
             </nav>
@@ -23,10 +24,19 @@
 
     <main>
         <section id="home" class="hero">
-            <div class="container">
-                <h2>你好，我是前端小白</h2>
-                <p>这是我的个人网站，正在学习前端开发！</p>
-                <button id="greeting-btn">点击打招呼</button>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h2>你好，我是 前端小白</h2>
+                    <p class="subtitle">前端开发者 & 技术爱好者</p>
+                    <p class="intro">热爱编程，乐于分享。不断学习，持续进步。<br>让代码创造价值，让技术改变生活。</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">查看我的项目</a>
+                        <a href="#contact" class="btn btn-secondary">联系我</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="头像.jpg" alt="我的照片" class="profile-img">
+                </div>
             </div>
         </section>
 
@@ -34,8 +44,40 @@
             <div class="container">
                 <h2>关于我</h2>
                 <div class="about-content">
-                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20portrait%20photo%20of%20a%20young%20developer%20with%20laptop&image_size=square" alt="我的照片" class="profile-img">
-                    <p>我是一名正在学习前端开发的小白，热爱编程和技术。通过这个网站，我希望分享我的学习历程和项目经验。</p>
+                    <img src="头像.jpg" alt="我的照片" class="profile-img">
+                    <p>我是一名正在学习前端开发的小白，热爱编程和技术。通过这个网站，我希望分享我的学习历程和项目经验。<br><br>我对新技术充满热情，喜欢探索各种前端框架和工具。在学习过程中，我不断积累经验，努力提升自己的技术能力。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>技能</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i>📱</i>
+                        <h4>HTML5</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i>🎨</i>
+                        <h4>CSS3</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i>⚡</i>
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i>⚛️</i>
+                        <h4>React</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i>📦</i>
+                        <h4>Node.js</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i>☁️</i>
+                        <h4>Git</h4>
+                    </div>
                 </div>
             </div>
         </section>
@@ -45,16 +87,16 @@
                 <h2>我的项目</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <h3>项目一</h3>
-                        <p>这是我的第一个项目</p>
+                        <h3>个人博客系统</h3>
+                        <p>使用React和Node.js构建的现代化博客平台，支持文章发布、评论和分类功能。</p>
                     </div>
                     <div class="project-card">
-                        <h3>项目二</h3>
-                        <p>这是我的第二个项目</p>
+                        <h3>任务管理应用</h3>
+                        <p>基于Vue.js开发的任务管理工具，支持任务创建、优先级排序和进度追踪。</p>
                     </div>
                     <div class="project-card">
-                        <h3>项目三</h3>
-                        <p>这是我的第三个项目</p>
+                        <h3>在线商城</h3>
+                        <p>完整的电商平台前端界面，包含商品展示、购物车和订单管理功能。</p>
                     </div>
                 </div>
             </div>
@@ -75,7 +117,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 我的个人网站 | 使用 GitHub Pages 托管</p>
+            <p>&copy; 2026 前端小白 | 使用 GitHub Pages 托管</p>
         </div>
     </footer>
 

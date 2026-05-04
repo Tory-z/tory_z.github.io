@@ -1,11 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const greetingBtn = document.getElementById('greeting-btn');
     const contactForm = document.getElementById('contact-form');
     const navLinks = document.querySelectorAll('nav a');
-
-    greetingBtn.addEventListener('click', function() {
-        alert('你好！很高兴认识你！欢迎访问我的个人网站！🎉');
-    });
 
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
