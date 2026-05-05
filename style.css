@@ -62,7 +62,7 @@ main {
 }
 
 .hero {
-    background: url('个人网站背景.png');
+    background: url('background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
