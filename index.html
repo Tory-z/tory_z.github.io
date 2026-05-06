@@ -12,110 +12,77 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo">前端小白</div>
             <nav>
                 <ul>
-                    <li><a href="#home">首页</a></li>
-                    <li><a href="#about">关于我</a></li>
-                    <li><a href="#projects">项目</a></li>
-                    <li><a href="#skills">技能</a></li>
-                    <li><a href="#contact">联系我</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#internships">Internships</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="container hero-content">
-                <div class="hero-center">
-                    <img src="avatar.jpg" alt="我的照片" class="profile-img">
-                    <p class="welcome-text">Welcome to my website~</p>
-                    <h2>詹涛睿</h2>
-                    <div class="contact-info">
-                        <p>📧 zhantaorui@outlook.com</p>
-                        <p>📍 广东惠州</p>
-                    </div>
-                    <div class="scroll-down">
-                        <span>↓</span>
-                    </div>
+        <div class="main-content">
+            <aside class="sidebar">
+                <img src="avatar.jpg" alt="我的照片" class="profile-img">
+                <h1>Taorui Zhan</h1>
+                <p class="title">Jinan University</p>
+                <div class="contact-info">
+                    <p>📍 Guangzhou, China</p>
+                    <p>📧 <a href="mailto:zhantaorui@outlook.com" class="no-style-link">Email</a></p>
+                    <p>🐙 <a href="https://github.com/tory-z/" target="_blank" class="no-style-link">GitHub</a></p>
                 </div>
-            </div>
-        </section>
+            </aside>
 
-        <section id="about">
-            <div class="container">
-                <h2>关于我</h2>
-                <div class="about-content">
-                    <img src="avatar.jpg" alt="我的照片" class="profile-img">
-                    <p>我是一名正在学习前端开发的小白，热爱编程和技术。通过这个网站，我希望分享我的学习历程和项目经验。<br><br>我对新技术充满热情，喜欢探索各种前端框架和工具。在学习过程中，我不断积累经验，努力提升自己的技术能力。</p>
-                </div>
-            </div>
-        </section>
+            <div class="content">
+                <section id="about">
+                    <h2>👋 About Me</h2>
+                    <p>Hi! My name is Taorui Zhan. I am a frontend developer passionate about creating beautiful and functional web applications. My research interests include web development, user interface design, and emerging web technologies.</p>
+                    <p>I'm actively seeking opportunities to collaborate on exciting projects and contribute to innovative web solutions.</p>
+                </section>
 
-        <section id="skills">
-            <div class="container">
-                <h2>技能</h2>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <i>📱</i>
-                        <h4>HTML5</h4>
+                <section id="internships">
+                    <h2>Internships</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3>Frontend Developer Intern</h3>
+                            <p class="company">ABC Tech Company | Jun 2024 - Aug 2024</p>
+                            <ul>
+                                <li>Developed responsive web applications using React and TypeScript</li>
+                                <li>Implemented UI components and optimized page performance</li>
+                                <li>Collaborated with cross-functional teams on product development</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <i>🎨</i>
-                        <h4>CSS3</h4>
-                    </div>
-                    <div class="skill-item">
-                        <i>⚡</i>
-                        <h4>JavaScript</h4>
-                    </div>
-                    <div class="skill-item">
-                        <i>⚛️</i>
-                        <h4>React</h4>
-                    </div>
-                    <div class="skill-item">
-                        <i>📦</i>
-                        <h4>Node.js</h4>
-                    </div>
-                    <div class="skill-item">
-                        <i>☁️</i>
-                        <h4>Git</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="projects">
-            <div class="container">
-                <h2>我的项目</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>个人博客系统</h3>
-                        <p>使用React和Node.js构建的现代化博客平台，支持文章发布、评论和分类功能。</p>
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <div class="projects-list">
+                        <div class="project-item">
+                            <h3>Personal Blog System</h3>
+                            <p>A modern blog platform built with React and Node.js, supporting article publishing and comments.</p>
+                        </div>
+                        <div class="project-item">
+                            <h3>Task Management App</h3>
+                            <p>A task management tool developed with Vue.js, featuring task creation and progress tracking.</p>
+                        </div>
                     </div>
-                    <div class="project-card">
-                        <h3>任务管理应用</h3>
-                        <p>基于Vue.js开发的任务管理工具，支持任务创建、优先级排序和进度追踪。</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>在线商城</h3>
-                        <p>完整的电商平台前端界面，包含商品展示、购物车和订单管理功能。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="contact">
-            <div class="container">
-                <h2>联系我</h2>
-                <form id="contact-form">
-                    <input type="text" placeholder="你的名字" required>
-                    <input type="email" placeholder="你的邮箱" required>
-                    <textarea placeholder="留言内容" required></textarea>
-                    <button type="submit">发送</button>
-                </form>
+                <section id="publications">
+                    <h2>Publications</h2>
+                    <div class="publications-list">
+                        <div class="publication-item">
+                            <p><strong>Zhan, T.</strong> (2024). Web Development Best Practices. Frontend Journal.</p>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
